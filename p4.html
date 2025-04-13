@@ -1,0 +1,136 @@
+<!doctype>
+<html>
+<head>
+<title>FORMS</title>
+</head>
+<body>
+<forms>
+<fieldset legend="Login" align="left">
+<legend>Login</legend>
+<label for="username">Username*</label><br>
+<input type="text" id="username"><br>
+<label for="password">Password*</label><br>
+<input type="text" id="password"><br>
+</fieldset>
+<fieldset>
+<legend>Gender*</legend>
+<input type="radio" name="group1">
+<label for="male">Male</label>
+<input type="radio" name="group1">
+<label for="female">Female</label>
+</fieldset>
+<fieldset>
+<legend>Programming Skills</legend>
+<input type="checkbox">
+<label for="java">Java</label>
+<input type="checkbox" checked>
+<label for="C++">C++</label>
+<input type="checkbox">
+<label for="C#">C#</label>
+</fieldset>
+<fieldset>
+<legend>Fruit</legend>
+<label for ="choose">Choose a fruit:</label>
+<select name ="fruits">
+<optgroup label="Pome">
+<option>Apple</option>
+<option>Pear</option>
+</optgroup>
+<optgroup label="Citrus">
+<option>Oranges</option>
+<option>Grapefruits</option>
+<option>Mandarins</option>
+<option>lime</option>
+</optgroup>
+<optgroup label="Stone">
+<option>Nectarines</option>
+<option>Apricots</option>
+<option>Peaches</option>
+<option>Plums</options>
+</optgroup>
+<optgroup label="Exotic">
+<option selected >Banana</option>
+<option>Mangoes</option>
+</optgroup>
+<optgroup label="Berries">
+<option>strawberries</option>
+<option>raspberries</option>
+<option>blueberries</option>
+<option>kiwifruit</option>
+<option>passionfruit</option>
+</optgroup>
+<optgroup label="Melons">
+<option>Watermelons</option>
+<option>Rock-melons</option>
+<option>honeydew melons</option>
+</optgroup>
+</select>
+</fieldset>
+<fieldset>
+<input type="text" placeholder="Enter your comment here" style ="height:400px;width:100%;">
+</fieldset>
+<input type="submit" label ="SEND">
+<input type="reset" label ="RESET">
+</forms>
+<br><br><br>
+<form>
+<fieldset>
+<legend style="color:red">Personal Details</legend><br>
+Name &nbsp; &nbsp; &nbsp; &nbsp;: <input type="text"><br><br>
+Password &nbsp; : <input type="password"><br><br>
+E-mail id  &nbsp;: <input type="email"><br><br>
+Gender &nbsp; &nbsp; &nbsp;: <input type="radio"><label>Male</label><input type="radio" checked><label>Female</label><br><br>
+DOB &nbsp; &nbsp; &nbsp; &nbsp;: <input type="date"><br><br>
+Mobile# &nbsp;: <input type="tel"><br><br>
+</fieldset>
+<fieldset>
+<legend style="color:red">Educational Qualification</legend><br><br>
+<label>Degree&nbsp;:</label>
+<select>
+<option disabled selected hidden>--Select Group--</option>
+<optgroup label="UG">
+<option>BE</option>
+<option>BTech</option>
+<option>BSc</option>
+<option>BA</option>
+<option>BCA</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>Others</option>
+</optgroup>
+<optgroup label="PG">
+<option>ME</option>
+<option>MTech</option>
+<option>MSc</option>
+<option>MA</option>
+<option>MCA</option>
+<option>MBA</option>
+<option>Others</option>
+</optgroup>
+<optgroup label="PhD">
+<option>Engineering</option>
+<option>Science</option>
+<option>Management</option>
+<option>Others</option>
+</optgroup>
+</select>
+<label>Engineering:</label>
+<input list="engi" placeholder="--Select Group--">
+<datalist id="engi">
+<option value="CSE">
+<option value="ECE">
+<option value="EEE">
+<option value="CIVIL">
+<option value="MECH">
+</datalist>
+</fieldset>
+Hobbies&nbsp;&nbsp;&nbsp;&nbsp;:<input type="checkbox"><label>Playing chess</label>
+<input type="checkbox"><label>Reading books</label><br><br>
+Favourite Color:<input type="color"><br><br>
+<p style="color:red">Address</p><br>
+<input type="text" style="width:100%;height:100px;"><br><br>
+Attach Resume:<input type="file">
+<input type="submit">
+</form>
+</body>
+</html>

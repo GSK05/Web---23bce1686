@@ -1,0 +1,53 @@
+.rainbow {
+   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+   -webkit-background-clip: text;
+   color: transparent;
+   font-size: 3em;
+   text-align: center;
+ }
+
+ .desc {
+   column-count: 2;
+   column-gap: 20px;
+   line-height: 30pt;
+   padding: 20px;
+ }
+ 
+ .background-image {
+   background: url('https://www.shutterstock.com/image-illustration/pet-group-concept-dogs-cats-600w-276494813.jpg') no-repeat center center;
+   background-size: contain;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 2em;
+ }
+
+ .play {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+ }
+  #ball {
+   animation: playBall 2s infinite ease-in-out;
+ }
+
+ @keyframes playBall {
+   0% {
+     transform: translate(0, 0) rotate(0deg) skewX(0deg);
+   }
+   25% {
+     transform: translate(50px, 0) rotate(45deg) skewX(10deg);
+   }
+   50% {
+     transform: translate(50px, 50px) rotate(90deg) skewX(20deg);
+   }
+   75% {
+     transform: translate(0, 50px) rotate(135deg) skewX(10deg);
+   }
+   100% {
+     transform: translate(0, 0) rotate(180deg) skewX(0deg);
+   }
+ }
